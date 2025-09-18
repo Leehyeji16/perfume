@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fefefe;
+    overflow-x: hidden;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+:root { --header-h: 72px; }
+
+.site-header{
+  /* position: fixed; top:0; left:0; right:0; */
+  /* height: var(--header-h); */
+  /* background:#000;            */
+  /* border-bottom:1px solid #f0f0f0; */
+  /* z-index:2000; */
+  /* display:flex; align-items:center; */
+  background: #E5C2BC;
+  height: 150px;
+}
+
+
+/* body{ padding-top: var(--header-h); } */
+
+/* Header */
+.header {
+    
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4a574;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    color: #000;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d4a574;
+}
+
+/* Header Banner */
+.header-banner {
+    padding: 80px 0 40px;
+    background: linear-gradient(135deg, #f8f6f3, #faf8f6);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-products {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.banner-perfume {
+    width: 80px;
+    height: 120px;
+    border-radius: 10px;
+    position: relative;
+    opacity: 0.7;
+}
+
+.banner-perfume.green {
+    background: linear-gradient(180deg, #a8e6cf, #7fcdcd);
+    transform: rotate(-15deg);
+}
+
+.banner-perfume.pink {
+    background: linear-gradient(180deg, #ffc0cb, #ffb3ba);
+    transform: rotate(15deg);
+}
+
+.banner-flowers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.flower {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.pink-flower {
+    background: radial-gradient(circle, #ffb3d9, #ff80cc);
+    top: 20px;
+    left: 20%;
+    animation: float 4s ease-in-out infinite;
+}
+
+.cream-flower {
+    background: radial-gradient(circle, #fff2e6, #ffe6cc);
+    bottom: 30px;
+    right: 20%;
+    animation: float 5s ease-in-out infinite reverse;
+}
+
+/* Product Detail Section */
+.product-detail {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Product Image Section */
+.product-image-section {
+    position: relative;
+    
+}
+
+.main-product-image {
+    position: relative;
+    height: 500px;
+    background: linear-gradient(135deg, #f5e6d3, #f0d7c4);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfume-display {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.perfume-bottle-main {
+    width: 140px;
+    height: 300px;
+    position: relative;
+    z-index: 3;
+}
+
+.bottle-cap-main {
+    width: 60px;
+    height: 50px;
+    border-radius: 50% 50% 20% 20%;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.bottle-cap-main.gold {
+    background: linear-gradient(135deg, #d4a574, #b8935a);
+    box-shadow: 0 3px 15px rgba(212, 165, 116, 0.4);
+}
+
+.bottle-body-main {
+    width: 100px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #f4e4bc, #e6d199);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.label-main {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2c2c;
+    letter-spacing: 2px;
+    padding: 8px 15px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+}
+
+.product-box {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 120px;
+    height: 80px;
+    background: linear-gradient(135deg, #fff, #f8f8f8);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.fabric-backdrop {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    width: 200px;
+    height: 400px;
+    background: linear-gradient(135deg, #d4a574, #c49666);
+    border-radius: 50px;
+    opacity: 0.3;
+    z-index: 1;
+    transform: rotate(15deg);
+}
+
+/* Product Information Section */
+.product-info-section {
+    padding: 40px 0;
+}
+
+.product-title {
+    margin-top: 150px;
+    font-size: 48px;
+    font-weight:bold;
+    color: #2c2c2c;
+    margin-bottom: 15px;
+    letter-spacing: 1px;font-family: "Abhaya Libre", serif
+}
+
+.product-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.product-price {
+    margin-bottom: 40px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 500;
+    color: #2c2c2c;
+}
+
+.currency {
+    font-size: 18px;
+    color: #666;
+    margin-left: 5px;
+}
+
+.quantity-section {
+    margin-bottom: 40px;
+}
+
+.quantity-section label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.qty-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+    background: #f5f5f5;
+    border-color: #d4a574;
+}
+
+#quantity {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #d4a574, #c49666);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #c49666, #b8935a);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.3);
+}
+
+.product-details p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.detail-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-item:hover,
+.tab-item.active {
+    background: #f0f0f0;
+    transform: translateX(10px);
+}
+
+.tab-icon {
+    font-size: 24px;
+}
+
+.tab-text {
+    font-weight: 500;
+    color: #2c2c2c;
+    min-width: 80px;
+}
+
+.tab-desc {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Ingredients Section */
+.ingredients-section {
+    margin-top: 150px;
+    padding: 100px 0;
+    background: #fafafa;
+}
+
+.ingredients-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.ingredients-header h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.ingredients-header p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.ingredient-highlight {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.ingredient-highlight h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #d4a574;
+    margin-bottom: 20px;
+}
+
+.ingredient-highlight p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ingredient-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.ingredient-item {
+    text-align: center;
+}
+
+.ingredient-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ingredient-visual {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wood-texture {
+    background: linear-gradient(45deg, #8b4513, #a0522d, #cd853f);
+    background-size: 20px 20px;
+    background-image: 
+        repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,.1) 5px, rgba(255,255,255,.1) 10px);
+}
+
+.honey-texture {
+    background: linear-gradient(135deg, #ffd700, #ffb347, #ff8c00);
+    position: relative;
+}
+
+.honey-texture::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(ellipse, #ffff99, transparent);
+    opacity: 0.7;
+}
+
+.ingredient-info h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+.ingredient-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience-section {
+    margin-top: 300px;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f6f3, #faf8f6);
+}
+
+.experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.experience-image {
+    position: relative;
+}
+
+.experience-text h3{margin-bottom: 50px;}
+
+.experience-text .experience-details{}
+.experience-text p{margin-top: 20px;line-height: 30px;font-size: 15px;}
+
+.visual{margin-top: 300px;margin-bottom: 300px;}
+
+.woman-fragrance {
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(135deg, #f5c2c7, #f8d7da);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.woman-silhouette {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 60%;
+    background: linear-gradient(135deg, #e8b4cb, #f1c2c7);
+    border-radius: 50% 50% 20% 30%;
+    opacity: 0.8;
+}
+
+.fragrance-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(212, 165, 116, 0.6);
+    border-radius: 50%;
+}
+
+.particle:nth-child(1) {
+    top: 20%;
+    left: 60%;
+    animation-delay: 0s;
+}
+
+/* footer{width: 1600px;border: 1px solid #000;} */
+
+footer{
+  bottom: 0;; left:0; right:0;
+  border-bottom:1px solid #f0f0f0;
+  z-index:2000;
+  display:flex; align-items:center;
+  background: #E5C2BC;
+  height: 150px;
+}

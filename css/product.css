@@ -1,0 +1,983 @@
+/*상품*/
+.visual_sub {
+  position: relative;
+  min-height: 60vh;
+  background: url('../images/pr/visual.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 16px;
+}
+
+.visual_sub .p {
+  color: #6B4F3A;
+  position: absolute;
+  bottom: 130px;
+  right: 50px;
+  font-weight: bold;
+}
+
+.visual_sub span {
+  color: #6B4F3A;
+  position: absolute;
+  bottom: 110px;
+  right: 50px;
+  font-weight: bold;
+}
+
+.visual_sub p {
+  color: #6B4F3A;
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* .lifestyle-section .container {border: 1px solid #000;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section-decoration {
+  color: #d4a574;
+  margin-top: 2.5px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 300;
+  color: #2c2c2c;
+  letter-spacing: 2px;
+  font-family: "Abhaya Libre", serif
+}
+
+/* Product Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.product-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  margin-bottom: 30px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-info {
+  padding: 0 20px;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "Abhaya Libre", serif
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  min-height: 40px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+/* Signature Collection Styles */
+.signature-collection {
+  padding: 80px 0;
+  background: #fff;
+}
+
+/* Perfume Bottle Designs - Signature Collection */
+.perfume-bottle {
+  width: 120px;
+  height: 250px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.bottle-cap {
+  width: 50px;
+  height: 40px;
+  border-radius: 50% 50% 20% 20%;
+  margin: 0 auto 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.bottle-cap.gold {
+  background: linear-gradient(135deg, #d4a574, #b8935a);
+  box-shadow: 0 2px 10px rgba(212, 165, 116, 0.3);
+}
+
+.bottle-cap.black {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  box-shadow: 0 2px 10px rgba(44, 44, 44, 0.3);
+}
+
+.bottle-cap.gold-flower {
+  background: linear-gradient(135deg, #d4a574, #b8935a);
+  box-shadow: 0 2px 10px rgba(212, 165, 116, 0.3);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flower-detail {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #fff 30%, transparent 31%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.flower-detail::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #f5b7a8;
+  border-radius: 50%;
+}
+
+.bottle-body {
+  width: 80px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.eternal .bottle-body {
+  background: url("../images/pr/img1.png")
+}
+
+.pure-bloom .bottle-body.pink {
+  background: linear-gradient(180deg, #f8d7da, #f1c2c7);
+}
+
+.lumiere .bottle-body.amber {
+  background: linear-gradient(180deg, #f5deb3, #daa520);
+}
+
+.fleur-charm .bottle-body.peach {
+  background: linear-gradient(180deg, #ffd6cc, #ffb3a3);
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+}
+
+.label.gold {
+  color: #d4a574;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Essential Collection Styles */
+.essential-collection {
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+
+/* Round Perfume Bottle Designs */
+.perfume-bottle-round {
+  width: 150px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.bottle-cap-round {
+  width: 40px;
+  height: 30px;
+  border-radius: 50% 50% 20% 20%;
+  margin: 0 auto 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.bottle-cap-round.purple {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.bottle-cap-round.gold {
+  background: linear-gradient(135deg, #d4a574, #b8935a);
+}
+
+.bottle-body-round {
+  width: 120px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fresh-lavender .bottle-body-round.lavender {
+  background: linear-gradient(180deg, #e6e6fa, #dda0dd);
+}
+
+.citrus-fresh .bottle-body-round.yellow {
+  background: linear-gradient(180deg, #fff8dc, #f0e68c);
+}
+
+.warm-skin .bottle-body-round.beige {
+  background: linear-gradient(180deg, #f5f5dc, #deb887);
+}
+
+.soft-rain .bottle-body-round.clear {
+  background: linear-gradient(180deg, #f0f8ff, #e6f3ff);
+}
+
+.label-round {
+  font-size: 10px;
+  font-weight: bold;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+/* Lifestyle Section */
+.lifestyle-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #faf0e6, #f5f5dc);
+  position: relative;
+  overflow: hidden;
+}
+
+.lifestyle-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.lifestyle-image {
+  position: relative;
+}
+
+.woman-reading {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #deb887, #d2b48c);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.woman-reading::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background: linear-gradient(135deg, #f4a460, #cd853f);
+  border-radius: 50% 20% 50% 20%;
+  opacity: 0.7;
+}
+
+.lifestyle-text {
+  padding: 40px 0;
+}
+
+.lifestyle-text blockquote {
+  font-size: 30px;
+  font-style: italic;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-family: "Abhaya Libre", serif
+}
+
+.korean-text {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.description {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Home Fragrance Section */
+.home-fragrance {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.home-products .product-item .product-image {
+  height: 250px;
+}
+
+
+/* Home Product Designs */
+.home-product {
+  width: 180px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.diffuser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reed-sticks {
+  width: 80px;
+  height: 120px;
+  background: linear-gradient(to top, transparent 0%, #8B4513 20%, #8B4513 80%, transparent 100%);
+  border-radius: 2px;
+  position: relative;
+}
+
+.reed-sticks::before,
+.reed-sticks::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background: #654321;
+  top: 0;
+}
+
+.reed-sticks::before {
+  left: 20px;
+}
+
+.reed-sticks::after {
+  right: 20px;
+}
+
+.diffuser-bottle {
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(180deg, #f5deb3, #daa520);
+  border-radius: 5px 5px 15px 15px;
+  margin-top: -20px;
+}
+
+.candle-set {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.candle {
+  width: 50px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.candle.white {
+  background: linear-gradient(180deg, #fff, #f5f5f5);
+  height: 100px;
+}
+
+.candle.cream {
+  background: linear-gradient(180deg, #fffacd, #f5deb3);
+  height: 80px;
+}
+
+.single-candle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candle-jar {
+  width: 100px;
+  height: 120px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.candle-jar.white {
+  background: linear-gradient(180deg, #fff, #f8f8f8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.candle-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: #2c2c2c;
+  letter-spacing: 1px;
+}
+
+.sachets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sachet-pair {
+  display: flex;
+  gap: 15px;
+}
+
+.sachet {
+  width: 60px;
+  height: 80px;
+  border-radius: 10px 10px 20px 20px;
+  position: relative;
+}
+
+.sachet.purple {
+  background: linear-gradient(180deg, #dda0dd, #9370db);
+}
+
+.sachet.lavender {
+  background: linear-gradient(180deg, #e6e6fa, #d8bfd8);
+}
+
+.ribbon {
+  width: 100px;
+  height: 8px;
+  background: linear-gradient(90deg, #ff69b4, #ffc0cb);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Personal Care Section */
+.personal-care {
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+
+.care-products .product-item .product-image {
+  height: 220px;
+}
+
+/* Care Product Designs */
+.care-product {
+  width: 160px;
+  height: 180px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand-cream {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tube {
+  width: 80px;
+  height: 120px;
+  border-radius: 5px 5px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.tube.gold {
+  background: linear-gradient(180deg, #ffd700, #daa520);
+  box-shadow: 0 3px 10px rgba(218, 165, 32, 0.3);
+}
+
+.tube .cap {
+  position: absolute;
+  top: -5px;
+  width: 30px;
+  height: 15px;
+  border-radius: 15px 15px 5px 5px;
+}
+
+.tube .cap.black {
+  background: linear-gradient(180deg, #2c2c2c, #1a1a1a);
+}
+
+.soap-set {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.soap {
+  width: 50px;
+  height: 40px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.soap.green {
+  background: linear-gradient(135deg, #90ee90, #32cd32);
+}
+
+.soap.brown {
+  background: linear-gradient(135deg, #deb887, #cd853f);
+}
+
+.office-mist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spray-bottle {
+  width: 60px;
+  height: 140px;
+  position: relative;
+}
+
+.spray-cap {
+  width: 40px;
+  height: 30px;
+  border-radius: 10px 10px 5px 5px;
+  margin: 0 auto 5px;
+  position: relative;
+}
+
+.spray-cap.black {
+  background: linear-gradient(180deg, #2c2c2c, #1a1a1a);
+}
+
+.spray-cap.black::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 8px;
+  background: #2c2c2c;
+  border-radius: 5px 5px 0 0;
+}
+
+.bottle-body.amber {
+  width: 60px;
+  height: 100px;
+  background: linear-gradient(180deg, #daa520, #b8860b);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(218, 165, 32, 0.2);
+}
+
+.bottle-body.amber .label {
+  font-size: 8px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(44, 44, 44, 0.8);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.travel-kit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.kit-box {
+  width: 100px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.kit-box.black {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.kit-box .logo {
+  color: #d4a574;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.mini-bottles {
+  display: flex;
+  gap: 10px;
+}
+
+.mini-bottle {
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(180deg, #f5deb3, #daa520);
+  border-radius: 3px;
+  position: relative;
+}
+
+.mini-bottle::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 5px;
+  background: #d4a574;
+  border-radius: 50% 50% 20% 20%;
+}
+
+/* Gift Wrapping Section */
+.gift-wrapping {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #ffc0cb, #ffb6c1);
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.gift-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.gift-boxes {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.gift-box {
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-box.large {
+  width: 180px;
+  height: 120px;
+}
+
+.gift-box.small {
+  width: 100px;
+  height: 80px;
+}
+
+.gift-box.pink {
+  background: linear-gradient(135deg, #ffc0cb, #ff91a4);
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+}
+
+.gift-handle {
+  width: 80px;
+  height: 15px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.gift-handle.black {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+}
+
+.gift-handle.black::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  height: 3px;
+  background: #2c2c2c;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+.gift-logo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c2c2c;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.gift-ribbon {
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  border-radius: 4px;
+}
+
+.gift-ribbon.black {
+  background: linear-gradient(90deg, #2c2c2c, #1a1a1a);
+}
+
+.gift-text {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.gift-text blockquote {
+  font-size: 25px;
+  font-style: italic;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-family: "Abhaya Libre", serif
+}
+
+.gift-text .korean-text {
+  font-size: 16px;
+  color: #555;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .lifestyle-content,
+  .gift-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .lifestyle-text blockquote {
+    font-size: 20px;
+  }
+
+  .gift-text blockquote {
+    font-size: 18px;
+  }
+
+  .gift-boxes {
+    gap: 20px;
+  }
+
+  .gift-box.large {
+    width: 150px;
+    height: 100px;
+  }
+
+  .gift-box.small {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .product-name {
+    font-size: 20px;
+  }
+
+  .product-description {
+    font-size: 13px;
+  }
+
+  .lifestyle-section,
+  .gift-wrapping,
+  .signature-collection,
+  .essential-collection,
+  .home-fragrance,
+  .personal-care {
+    padding: 60px 0;
+  }
+}
+
+/* Animation Effects */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.perfume-bottle,
+.perfume-bottle-round {
+  animation: float 6s ease-in-out infinite;
+}
+
+.perfume-bottle:nth-child(2n) {
+  animation-delay: -3s;
+}
+
+.home-product {
+  transition: all 0.3s ease;
+}
+
+.home-product:hover {
+  transform: scale(1.05);
+}
+
+.care-product {
+  transition: all 0.3s ease;
+}
+
+.care-product:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-item {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.product-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.product-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.product-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.product-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Loading States */
+.product-item {
+  opacity: 0;
+}
+
+/* Hover Effects */
+.product-item:hover .perfume-bottle,
+.product-item:hover .perfume-bottle-round,
+.product-item:hover .home-product,
+.product-item:hover .care-product {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.product-item:hover .product-name {
+  color: #d4a574;
+  transition: color 0.3s ease;
+}
+
+/* Focus States for Accessibility */
+.product-item:focus {
+  outline: 2px solid #d4a574;
+  outline-offset: 5px;
+  border-radius: 10px;
+}

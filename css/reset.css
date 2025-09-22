@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: #343434;}
+li{list-style: none;}
+img, video{vertical-align: top;}
+table{border-collapse: collapse;}
+input{outline: 0}
+textarea{border-radius: 0;resize: none;outline: 0;}

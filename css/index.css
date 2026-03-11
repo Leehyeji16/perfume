@@ -279,6 +279,7 @@ header .pc_nav .gnb li .lnb a:hover {
   text-align: center;
   font-family: 'SF_HambakSnow';
   margin-bottom: 6px;
+  color: #111;
 }
 
 #section1 p {
@@ -478,6 +479,7 @@ header .pc_nav .gnb li .lnb a:hover {
   font-size: 50px;
   font-family: 'SF_HambakSnow';
   margin-bottom: 30px;
+  color: #111;
 }
 
 #section2 .title_box .title2 {
@@ -579,6 +581,7 @@ header .pc_nav .gnb li .lnb a:hover {
   /* 50px → 30px */
   font-size: 20px;
   font-family: 'SF_HambakSnow';
+  color: #111;
 }
 
 #section3 .centerbox {
@@ -679,9 +682,9 @@ header .pc_nav .gnb li .lnb a:hover {
 }
 
 #section3 .centerbox ul li .item_wrap .name1-1:hover {
-  border-color: rgba(90, 60, 40, 0.5);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    border-color: rgba(90, 60, 40, 0.5);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 #section3 .centerbox .content_box ul li {
@@ -767,6 +770,7 @@ header .pc_nav .gnb li .lnb a:hover {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  color: #111;
 }
 
 footer {
